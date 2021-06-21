@@ -8,7 +8,7 @@
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+		<link rel="stylesheet" href="dist/theme/sky.css">
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
@@ -16,8 +16,87 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+					<h1>RS School 2021</h1>
+					<h2>OAuth 2.0</h2>
+					<h2>Konstantin Vlasenko</h2>
+					<h6>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></h6>
+				</section>
+				<section>
+					<h6>What problems OAuth should solve?</h6>
+					<p class="fragment" data-fragment-index="1">Giving away login and password</p>
+					<p class="fragment" data-fragment-index="2">Granting partial access</p>
+					<p class="fragment" data-fragment-index="3">Getting permision back</p>
+				</section>
+				<section>
+					<h6>New features OAuth 2.0</h6>
+					<p class="fragment" data-fragment-index="1">Several “flows”</p>
+					<p class="fragment" data-fragment-index="2">Short-life tokens with long-term authorization</p>
+					<p class="fragment" data-fragment-index="3">Separation of roles</p>
+				</section>
+				<section>
+					<h6>Roles</h6>
+					<div class="fragment" data-fragment-index="1">
+						<h3>User <img data-src="developer.png" width="10%" height="10%" style="margin: 0;"></h3>
+						
+					</div>
+					<div class="fragment" data-fragment-index="2">
+						<h3>Site <img data-src="layout.png" width="10%" height="10%" style="margin: 0;"></h3>
+					</div>
+					<div class="fragment" data-fragment-index="3">
+						<h3>Authorization Server<img data-src="database.png" width="10%" height="10%" style="margin: 0;"></h3>
+					</div>
+					<div class="fragment" data-fragment-index="4">
+						<h3>Protected Server<img data-src="server.png" width="10%" height="10%" style="margin: 0;"></h3>
+					</div>
+				</section>
+			
+				<section>
+					<div style="display: flex !important; flex-direction: row;">
+						<div style="display: flex; flex-direction: column; width: 20%; justify-content: center;">
+							<img data-src="layout.png" width="100%"  style="margin: 0;">
+						</div>
+						<div style="display: flex; flex-direction: column; width: 60%; align-items: center;">
+							<img data-src="developer.png" width="10%" style="margin: 0; position: absolute; top: -30%;">
+							<div class="fragment" data-fragment-index="1" style="display:flex; align-self:center; justify-content: space-between; flex-wrap: nowrap; font-size: 60%;">Request and Redirect ⇒</div>
+							<div class="fragment" data-fragment-index="2" style="display:flex; align-self:center; justify-content: space-between; flex-wrap: nowrap; font-size: 60%; margin-top: 1%;"> ⇐ Authorization code and Redirect Back</div>
+							<div class="fragment" data-fragment-index="3" style="display:flex; align-self:center; justify-content: space-between; flex-wrap: nowrap; font-size: 60%; margin-top: 1%;">Authorization code ⇒</div>
+							<div class="fragment" data-fragment-index="4" style="display:flex; align-self:center; justify-content: space-between; flex-wrap: nowrap; font-size: 60%; margin-top: 1%;">⇐ Authorization token</div>
+							<div class="fragment" data-fragment-index="5" style="display:flex; align-self:center; justify-content: space-between; flex-wrap: nowrap; font-size: 60%; margin-top: 20%;">Authorization token ⇒</div>
+							<div class="fragment" data-fragment-index="6" style="display:flex; align-self:center; justify-content: space-between; flex-wrap: nowrap; font-size: 60%; margin-top: 1%;">⇐ Access</div>
+						</div>
+						<div style="display: flex; flex-direction: column; width: 20%; justify-content: center;">
+							<img data-src="database.png" width="100%"  style="margin: 0;">
+							<img data-src="server.png" width="100%"  style="margin-top: 30%; margin-left: 10px;">
+						</div>
+					</div>
+				</section>
+				<section>
+					<div style="display: flex !important; flex-direction: row;">
+						<div style="display: flex; flex-direction: column; width: 20%; justify-content: center;">
+							<img data-src="layout.png" width="100%"  style="margin: 0;">
+						</div>
+						<div style="display: flex; flex-direction: column; width: 60%; align-items: center;">
+							
+							<div class="fragment" data-fragment-index="1" style="display:flex; align-self:center; justify-content: space-between; flex-wrap: nowrap; font-size: 70%;margin-top: 10%;"> Site name,web address and Callback URL⇒</div>
+							<div class="fragment" data-fragment-index="2" style="display:flex; align-self:center; justify-content: space-between; flex-wrap: nowrap; font-size: 70%; margin-top: 1%;"> ⇐ Client id, Client Secret</div>
+							
+						</div>
+						<div style="display: flex; flex-direction: column; width: 20%; justify-content: center;">
+							<img data-src="server.png" width="100%"  style="margin-top: 30%; margin-left: 10px;">
+						</div>
+					</div>
+				</section>
+				<section>
+					<p>What is OAth</p>
+					<p class="fragment" data-fragment-index="1">Authorization Protocol</p>
+					<p class="fragment" data-fragment-index="2">Giving access to the third-party sites or apps</p>
+					<p class="fragment" data-fragment-index="3">No password or login give away</p>
+					<p class="fragment" data-fragment-index="4">Protected</p>
+				</section>
+				<section>
+					<p class="r-fit-text">Thanks for watching</p>
+				</section>
 			</div>
 		</div>
 
